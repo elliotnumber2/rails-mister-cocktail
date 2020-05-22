@@ -1,9 +1,29 @@
-<h1><%= @cocktail.name %></h1>
+<div class="container">
+<% if @cocktail.photo.attached? %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>');">
+    <div class="container">
+      <h1><%= @cocktail.name %></h1>
+    </div>
+  </div>
+<% else %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.jamesgriffinpub.ie/wp-content/uploads/2013/09/cocktails.jpg);">
+    <div class="container">
+      <h1><%= @cocktail.name %></h1>
+    </div>
+  </div>
+<% end %>
 <% @cocktail.doses.each do |d| %>
   <h5><%= d.description %> of <%= d.ingredient.name %><%= link_to "Delete", dose_path(d), method: :delete, data: { confirm: "Are you sure?" } %></h5>
 <% end %>
 
-<h5><%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %></h5>
-
-<h5><%= link_to "Back to all cocktails", root_path %></h5>
-
+<div class="card-category">
+  <ul>
+    <li>
+      <%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %>
+    </li>
+    <li>
+      <%= link_to "Back to all cocktails", root_path %>
+    </li>
+  </ul>
+</div>
+</div>

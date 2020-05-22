@@ -1,9 +1,16 @@
-<h1>Cocktails!!!</h1>
-<ul>
+<div class="container">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.jamesgriffinpub.ie/wp-content/uploads/2013/09/cocktails.jpg);">
+  <div class="container">
+    <h1>Cocktails!!!</h1>
+    <p>Drink up, you worthless scumbag.</p>
+    <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-gradient" %>
+  </div>
+</div>
+<div class="cards">
   <% @cocktails.each do |cocktail| %>
-    <li>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://kitchenswagger.com/wp-content/uploads/2018/04/sacerac-cocktail.jpg)">
       <%= link_to cocktail.name, cocktail_path(cocktail) %>
-    </li>
+    </div>
   <% end %>
-</ul>
-<%= link_to "Add a cocktail", new_cocktail_path %>
+</div>
+</div>
