@@ -21,12 +21,6 @@ ActiveRecord::Schema.define(version: 2020_05_21_103153) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "coctails", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "doses", force: :cascade do |t|
     t.string "description"
     t.bigint "cocktail_id", null: false
