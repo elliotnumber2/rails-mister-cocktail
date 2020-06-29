@@ -76,10 +76,11 @@ ul {
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 280px;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
+  padding-top: 50px;
   color: white;
   font-size: 24px;
   font-weight: bold;
