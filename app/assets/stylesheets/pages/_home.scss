@@ -1,6 +1,6 @@
 // Specific CSS for your home-page
 body {
-  background-color: lavender;
+  background-color: #6B7FD7;
 }
 
 .container {
@@ -74,19 +74,37 @@ ul {
 }
 
 .card-category {
+  background-color: #BCEDF6;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 280px;
   display: flex;
   justify-content: center;
-  align-items: top;
-  padding-top: 50px;
-  color: white;
+  align-items: center;
+  color: black;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-show {
+  background-color: #BCEDF6;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 70px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#doses {
+  padding-bottom: 50px;
 }
 
 .cards {
