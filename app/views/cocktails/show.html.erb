@@ -15,8 +15,12 @@
 
 <div class="card-show">
   <div id="doses">
-    <% @cocktail.doses.each do |d| %>
-      <h4>This drank is made with <%= d.description %> of <%= d.ingredient.name %></h4> <h5><%= link_to "Delete this ingredient", dose_path(d), method: :delete, data: { confirm: "Are you sure?" } %></h5>
+    <% if @cocktail.doses.exists? %>
+      <% @cocktail.doses.each do |d| %>
+        <h4>This drank is made with <%= d.description %> of <%= d.ingredient.name %></h4> <h5><%= link_to "Delete this ingredient", dose_path(d), method: :delete, data: { confirm: "Are you sure?" } %></h5>
+      <% end %>
+    <% else %>
+      <h4>No ingredients listed. Wanna add one?</h4>
     <% end %>
   </div>
   <ul>
