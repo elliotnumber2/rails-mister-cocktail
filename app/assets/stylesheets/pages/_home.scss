@@ -3,12 +3,6 @@ body {
   background-color: #6B7FD7;
 }
 
-.container {
-  // background-color: pink;
-  text-align: center;
-  height: 100vh;
-}
-
 h1 {
   padding: 40px;
 }
@@ -19,21 +13,10 @@ ul {
   color: black;
 }
 
-#cocktail-form {
-  width: 700px;
-  color: hotpink;
-  margin: 0 auto;
-}
-
-.form-inputs {
-  font-weight: bold;
-  color: hot-pink;
-}
-
-.photo {
-  display: flex;
-  margin-left: 200px;
-  margin-bottom: 100px;
+.container {
+  // background-color: pink;
+  text-align: center;
+  height: 100vh;
 }
 
 .btn-gradient {
@@ -87,23 +70,6 @@ ul {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.card-show {
-  background-color: #BCEDF6;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  padding-top: 70px;
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-#doses {
-  padding-bottom: 50px;
 }
 
 .cards {

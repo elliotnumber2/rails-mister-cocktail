@@ -1,10 +1,12 @@
 <div class="container">
-  <h1>Add a cocktail</h1>
-  <div id="cocktail-form">
-    <%= simple_form_for @cocktail, defaults: { input_html: { class: 'form-inputs' } } do |f| %>
-      <%= f.input :name %>
-      <%= f.input :photo, as: :file, input_html: { class: 'photo' } %>
-      <%= f.submit %>
-    <% end %>
+  <div class="card-show">
+    <h1>Add a cocktail</h1>
+    <div id="cocktail-form">
+      <%= simple_form_for @cocktail, defaults: { input_html: { class: 'form-inputs' } } do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photo, as: :file, input_html: { class: 'photo' } %>
+        <%= f.submit %>
+      <% end %>
+    </div>
   </div>
 </div>
