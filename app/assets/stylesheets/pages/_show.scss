@@ -11,6 +11,16 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-#doses {
+#doses-card {
   padding-bottom: 50px;
+}
+
+#dose-list {
+  color: black;
+  padding: 0;
+}
+
+#dose {
+  display: flex;
+  justify-content: center;
 }

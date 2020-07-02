@@ -14,10 +14,13 @@
 <% end %>
 
 <div class="card-show">
-  <div id="doses">
+  <div id="doses-card">
     <% if @cocktail.doses.exists? %>
+      <h4>This drank is made with:</h4>
       <% @cocktail.doses.each do |d| %>
-        <h4>This drank is made with <%= d.description %> of <%= d.ingredient.name %></h4> <h5><%= link_to "Delete this ingredient", dose_path(d), method: :delete, data: { confirm: "Are you sure?" } %></h5>
+        <ul id="dose-list">
+          <li id="dose"><h5><%= d.description %> of <%= d.ingredient.name %></h5> <h6><%= link_to "Delete this ingredient", dose_path(d), method: :delete, data: { confirm: "Are you sure?" } %></h6></li>
+        </ul>
       <% end %>
     <% else %>
       <h4>No ingredients listed. Wanna add one?</h4>
