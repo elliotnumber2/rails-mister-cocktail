@@ -20,7 +20,15 @@
   padding: 0;
 }
 
-#dose {
+#dose-line {
   display: flex;
   justify-content: center;
+}
+
+#dose {
+  margin-right: 10px;
+}
+
+#delete-link {
+  margin-left: 10px;
 }

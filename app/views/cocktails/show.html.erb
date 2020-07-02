@@ -19,7 +19,7 @@
       <h4>This drank is made with:</h4>
       <% @cocktail.doses.each do |d| %>
         <ul id="dose-list">
-          <li id="dose"><h5><%= d.description %> of <%= d.ingredient.name %></h5> <h6><%= link_to "Delete this ingredient", dose_path(d), method: :delete, data: { confirm: "Are you sure?" } %></h6></li>
+          <li id="dose-line"><h5 id="dose"><%= d.description %> of <%= d.ingredient.name %></h5> <h6 id="delete-link"><%= link_to "Delete this ingredient", dose_path(d), method: :delete, data: { confirm: "Are you sure?" } %></h6></li>
         </ul>
       <% end %>
     <% else %>
