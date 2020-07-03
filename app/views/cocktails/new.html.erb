@@ -1,6 +1,10 @@
 <div class="container">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.jamesgriffinpub.ie/wp-content/uploads/2013/09/cocktails.jpg);">
+    <div class="container">
+      <h1>Add a cocktail</h1>
+    </div>
+  </div>
   <div class="card-show">
-    <h1>Add a cocktail</h1>
     <div id="cocktail-form">
       <%= simple_form_for @cocktail, defaults: { input_html: { class: 'form-inputs' } } do |f| %>
         <%= f.input :name %>
