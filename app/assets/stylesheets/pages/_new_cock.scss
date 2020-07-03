@@ -1,7 +1,17 @@
+.new-banner {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.card-show {
+  padding-top: 30px;
+}
+
 #cocktail-form {
   width: 700px;
   color: hotpink;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 35px auto;
 }
 
 .form-inputs {
@@ -11,6 +21,11 @@
 
 .photo {
   display: flex;
+  margin-top: 12px;
   margin-left: 200px;
   margin-bottom: 100px;
+}
+
+.name {
+  margin-bottom: 30px;
 }

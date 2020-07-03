@@ -7,7 +7,7 @@
   <div class="card-show">
     <div id="cocktail-form">
       <%= simple_form_for @cocktail, defaults: { input_html: { class: 'form-inputs' } } do |f| %>
-        <%= f.input :name %>
+        <%= f.input :name, input_html: { class: 'name' } %>
         <%= f.input :photo, as: :file, input_html: { class: 'photo' } %>
         <%= f.submit %>
       <% end %>
