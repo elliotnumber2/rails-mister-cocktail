@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.jamesgriffinpub.ie/wp-content/uploads/2013/09/cocktails.jpg);">
+  <div class="new-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.jamesgriffinpub.ie/wp-content/uploads/2013/09/cocktails.jpg);">
     <div class="container">
       <h1>Add a cocktail</h1>
     </div>
@@ -9,9 +9,11 @@
       <%= simple_form_for @cocktail, defaults: { input_html: { class: 'form-inputs' } } do |f| %>
         <%= f.input :name, input_html: { class: 'name' } %>
         <%= f.input :photo, as: :file, input_html: { class: 'photo' } %>
-        <%= f.submit %>
+        <div id="bottom-links">
+          <%= f.submit %>
+          <%= link_to "Back to all cocktails", root_path %>
+        </div>
       <% end %>
     </div>
-    <%= link_to "Back to all cocktails", root_path %>
   </div>
 </div>
